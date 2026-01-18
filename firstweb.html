@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> Praveen Rathore - Portfolio</title>
+
+    <!--Linking CSS file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+
+
+<!--NAVIGATION-->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#Education">Education</a>
+    <a href="#contact">Contact</a>
+    <a href="#experiments">Experiment</a>
+</nav>
+
+<!--HOME SECTION-->
+<section id="home">
+    <h1> I Praveen Rathore </h1>
+    <p>B.Tech student | Artifical Intelligence | Machine learning</p>
+</section>
+
+<!--ABOUT SECION-->
+<section id="about">
+    <div class="content-box">
+        <h2> About Me</h2>
+
+    <p> Hello! My name is <strong>Praveen Rathore</strong>. </p>
+     <img src="flutepose.jpg" alt="flutepose.jpg" width="300" height="300">
+     <img src="coatshoulder.jpg" alt="coatshoulder.jpg" width="300" height="400">
+     <img src="skyblue coat.jpg" alt="skyblue coat.jpg" width="300" height="300">
+    
+     <p> I am currently pursing studies in <strong>B.tech </strong> from
+      <strong> Shri vaishnav Vidyapeeth Vishwavidyalaya, Indore</strong>.</p>
+      <p> I have Lot of interest in Muisc production, Songwriting, coding and artificial Intelligence </p>
+      
+    </div>
+</section>
+
+<!--HOBBIES SECTION-->
+<section id="hobbies">
+    <div class="content-box">
+        <h2> My Hobbies</h2>
+        <ul>
+            <li>Listening and making songs</li>
+            <li>painting</li>
+            <li>cooking</li>
+            <li>playing guitar and flute</li>
+            <li>playing football</li>
+        </ul>
+    </div>
+</section>
+
+<!--EDUCATION SECTION-->
+<section id="education">
+    <div class="content-box">
+        <h2>My Education</h2>
+        <p>
+            I completed my <strong> 10th class</strong> from
+            <strong>Shri Cloth Market Vaishnav Higher Secondary School,Indore</strong>.<br><br>
+
+            I also completed my <strong>12th class</strong> from the same school.<br><br>
+
+            Currently, I am pursing my <strong>B.Tech (artifical Intelligence in Machine learning)</strong>
+            <strong>Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore</strong>.
+        </p>
+    </div>
+</section>
+
+<!--CONTACT SECTION-->
+<Section id="Contact">
+    <div class="content-box">
+        <h2>Contact Me</h2>
+        <p>Email:<strong>rathorepraveen905@gmail.com</strong></p>
+        <p>Phone: <strong>8962964523</strong></p>
+    </div>
+</Section>
+<!--EXPERIMENT SECTION-->
+<Section id="Experiment">
+    <div class="content-box">
+        <h2> Experimnent No #01</h2>
+        <p>Design a Web Page, insert an image on to the web page such that image is of height 300 and 
+            width 300 pixels.The image should have an ALT text in it.</p>
+<body>
+<img src="
+https://media.wonderlandmagazine.com/uploads/2023/10/Karan-Aujla-Press-Image.jpeg " alt="Karan Auijla" width= 300"
+height="300"> <h1> Karan Aujla (born Jaskaran Singh Aujla, Jan 18, 1997) is a prominent Indian singer,
+     rapper, and songwriter known for blending traditional Punjabi music with
+      hip-hop some of his famous songs are "for a reasons" </h1>
+</body>
+
+  <h2>EXPERIMENT NO #02</h2>
+  <P>Create a Web page that holds a bulleted list of the names of your friends. 
+    Make sure that the bullets are in plain circle.</P>
+ <body>
+<h1>My friends</h1>
+<ul style="list-style-type: circle"
+<li>Priyansh</li>
+<li>Maahi</li>
+<li>Tanveer</li>
+<li>Prince</li>
+<li>Priyanshi</li>
+</ul>
+</body>
+
+    <h2>EXPERIMENT NO #03</h2>
+    <p>create a frame which would hold the web page that has  created earlier
+         the frame should be split into row wise into equal halves</p>
+    <iframe src="pratical3.html"
+     width="100%"
+      height="1000px"
+       style="border:1px solid black;">
+     </iframe>
+
+      <h2> EXPERIMENT NO #04</h2>
+      <p>create a web page to display the marks you got in all subjects of last semester using table</p>
+      <style>
+table, th, td
+ {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2> HTML table</h2>
+
+<table style="width:50%">
+  <tr>
+    <th>subject</th>
+    <th>marks</th>
+  </tr>
+  <tr>
+    <td>maths</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>pythons</td>
+    <td>8</td>
+  </tr>
+  <tr>
+   <td>communications skill</td>
+   <td>14</td>
+  </tr>
+  <tr>
+   <td>ICSE</td>
+   <td>12</td>
+  </tr>
+  <tr>
+   <td>physics</td>
+   <td>9</td>
+  </tr>
+
+
+</table>
+
+
+</body>
+
+
+<h2>EXPERIMENT NO #05</h2>
+<p>Create a form having two boxes with labels as first name and last name the user should not be 
+    allowed to enter the names directly in the text boxes the input has to be given in the prompt
+     box and then enter the value should be given in the text boxes</p>
+  <body>
+
+<form>
+    First Name:
+    <input type="text" id="fname" readonly><br><br>
+
+    Last Name:
+    <input type="text" id="lname" readonly><br><br>
+
+    <input type="button" value="Enter Names" onclick="getNames()">
+</form>
+
+<script>
+function getNames()
+{
+    document.getElementById("fname").value = prompt("Enter First Name");
+    document.getElementById("lname").value = prompt("Enter Last Name");
+}
+</script>
+
+</body>
+
+  <h2>EXPERIMENT NO #06</H2> 
+    <p>Create a Web Page that has a button in the centre of the page. Using mouse
+         events change the Message in the status bar.</p>
+    <body>
+
+<center>
+    <button onmouseover="window.status='Mouse Over Button'" 
+            onmouseout="window.status='Mouse Out Button'">
+        Click Me
+    </button>
+</center>
+
+</body>
+
+  <h2>EXPERIMENT NO #07</H2> 
+    <p>Design a Web page that accepts Username and Password. Opens a new window
+     when the password corresponds to a particular value is set by the develop</p>
+    <body>
+
+<form>
+    Username:
+    <input type="text" id="user"><br><br>
+
+    Password:
+    <input type="password" id="pass"><br><br>
+
+    <input type="button" value="Login" onclick="check()">
+</form>
+
+<script>
+function check()
+{
+    var p = document.getElementById("pass").value;
+    if(p == "admin")
+    {
+        window.open("marks.html");
+    }
+    else
+    {
+        alert("Wrong Password");
+    }
+}
+</script>
+
+</body>
+    </div>
+</Section>
+<!--Footer-->
+<footer>
+
+     Praveen Rathore | Portfolio Website
+  </footer>
+
+  </body>
+  </html>
